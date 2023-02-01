@@ -1,0 +1,3 @@
+[submodule "MiraiWebsock"]
+	path = MiraiWebsock
+	url = https://github.com/kernelbin/MiraiWebsock
