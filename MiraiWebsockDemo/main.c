@@ -184,7 +184,7 @@ int wmain()
     {
         WCHAR command[MAX_PATH] = { 0 };
         wscanf(L"%s", command);
-        if (wcscmp(command, "stop") == 0)
+        if (wcscmp(command, L"stop") == 0)
         {
             break;
         }
