@@ -89,6 +89,7 @@ VOID PrintMessageChain(MESSAGE_CHAIN* pMessageChain)
         wprintf(L" ");
     }
 }
+
 VOID MiraiWSCallback(_In_ PMIRAI_WS pMiraiWS, _In_ UINT EventType, _In_ PVOID pInformation)
 {
     switch (EventType)
@@ -162,7 +163,7 @@ int wmain()
     wprintf(L"your mirai server websocket port: ");
     wscanf(L"%d", &Port);
 
-    PMIRAI_WS pMiraiWS = CreateMiraiWS(szServerAddr, (INTERNET_PORT)Port, FALSE, MiraiWSCallback);
+    PMIRAI_WS pMiraiWS = CreateMiraiWS(szServerAddr, (INTERNET_PORT)Port, TRUE, MiraiWSCallback);
     if (!pMiraiWS)
     {
         wprintf(L"CreateMiraiWS failed");
