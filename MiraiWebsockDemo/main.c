@@ -116,7 +116,7 @@ VOID MiraiWSCallback(_In_ PMIRAI_WS pMiraiWS, _In_ UINT EventType, _In_ PVOID pI
     case MWS_BADMSG:
     {
         MWS_BADMSGINFO* pInfo = (MWS_BADMSGINFO*)pInformation;
-        wprintf(L"received an unresoved message: \n"
+        wprintf(L"received an unresolved message: \n"
             L"===== begin =====\n"
             L"%s\n"
             L"====== end ======\n\n", pInfo->Message);
